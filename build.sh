@@ -18,7 +18,6 @@ set -ouex pipefail
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
-curl https://download.opensuse.org/repositories/home:manuelschneid3r/Fedora_41/home:manuelschneid3r.repo -o /etc/yum.repo.d/manuelschneid3r.repo
 rpm-ostree install albert
 
 #### Example for enabling a System Unit File
