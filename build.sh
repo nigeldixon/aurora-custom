@@ -18,7 +18,7 @@ set -ouex pipefail
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
-rpm-ostree install albert
+dnf -y install albert
 
 #### Example for enabling a System Unit File
 
